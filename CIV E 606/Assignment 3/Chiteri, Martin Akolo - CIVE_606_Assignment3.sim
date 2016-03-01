@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Version="206" DebugEnabled="false" TraceEnabled="true" name="Assignment 3" xmlns="http://irc.construction.ualberta.ca/Simphony/Modeling">
+  <Scenarios>
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="100" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-02-16T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Brick Laying">
+      <Elements>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Queue, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" color="0" initialLength="1" Version="206" X="140" Y="365" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="true" name="Labourer">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="56" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-17" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Normal, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" color="0" Version="206" X="585" Y="225" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Lay Bricks">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Duration AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.Modeling.Task`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="8" />
+          </Duration>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Queue, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" color="0" initialLength="2" Version="206" X="430" Y="380" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="true" name="Mason">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="56" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-17" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Queue, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" color="0" initialLength="0" Version="206" X="290" Y="225" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Palette on scaffold awaiting mason">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Queue, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" color="0" initialLength="3" Version="206" X="140" Y="85" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="true" name="Palette space on scaffold">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="66.08647" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-17" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Combi, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Priority="0" color="0" Version="206" X="425" Y="225" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Remove Pallete ">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Duration AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.Modeling.Task`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="1" />
+          </Duration>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Combi, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Priority="0" color="0" Version="206" X="140" Y="225" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Supply palette ">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Duration AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.Modeling.Task`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="2" />
+          </Duration>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.Cyclone.Counter, Simphony.Cyclone, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" color="0" Limit="6" Initial="0" Version="206" X="590" Y="380" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="true" name="Track Production">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="56" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-17" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Step AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Counter`1[[Simphony.Simulation.Entity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>1</Value>
+          </Step>
+        </Element>
+      </Elements>
+      <Relationships>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Labourer" SourcePoint="OutputPoint" DestinationElement="Supply palette " DestinationPoint="InputPoint">
+          <Points>
+            <Point X="123" Y="390" />
+            <Point X="113" Y="390" />
+            <Point X="114" Y="250" />
+            <Point X="124" Y="250" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Lay Bricks" SourcePoint="OutputPoint" DestinationElement="Track Production" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="652" Y="250" />
+            <Point X="662" Y="250" />
+            <Point X="666" Y="405" />
+            <Point X="656" Y="405" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Mason" SourcePoint="OutputPoint" DestinationElement="Remove Pallete " DestinationPoint="InputPoint">
+          <Points>
+            <Point X="413" Y="405" />
+            <Point X="403" Y="405" />
+            <Point X="399" Y="250" />
+            <Point X="409" Y="250" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Palette on scaffold awaiting mason" SourcePoint="OutputPoint" DestinationElement="Remove Pallete " DestinationPoint="InputPoint">
+          <Points>
+            <Point X="357" Y="250" />
+            <Point X="367" Y="250" />
+            <Point X="399" Y="250" />
+            <Point X="409" Y="250" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Palette space on scaffold" SourcePoint="OutputPoint" DestinationElement="Supply palette " DestinationPoint="InputPoint">
+          <Points>
+            <Point X="123" Y="110" />
+            <Point X="113" Y="110" />
+            <Point X="114" Y="250" />
+            <Point X="124" Y="250" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Remove Pallete " SourcePoint="OutputPoint" DestinationElement="Lay Bricks" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="492" Y="250" />
+            <Point X="502" Y="250" />
+            <Point X="559" Y="250" />
+            <Point X="569" Y="250" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Remove Pallete " SourcePoint="OutputPoint" DestinationElement="Palette space on scaffold" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="492" Y="250" />
+            <Point X="502" Y="250" />
+            <Point X="226.086472" Y="110" />
+            <Point X="216.086472" Y="110" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Supply palette " SourcePoint="OutputPoint" DestinationElement="Palette on scaffold awaiting mason" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="207" Y="250" />
+            <Point X="217" Y="250" />
+            <Point X="264" Y="250" />
+            <Point X="274" Y="250" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Supply palette " SourcePoint="OutputPoint" DestinationElement="Labourer" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="202" Y="250" />
+            <Point X="212" Y="250" />
+            <Point X="191" Y="390" />
+            <Point X="201" Y="390" />
+          </Points>
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Track Production" SourcePoint="OutputPoint" DestinationElement="Mason" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="573" Y="405" />
+            <Point X="563" Y="405" />
+            <Point X="506" Y="405" />
+            <Point X="496" Y="405" />
+          </Points>
+        </Relationship>
+      </Relationships>
+      <Initialization />
+      <ParameterDefinitions />
+    </Scenario>
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-02-18T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Question 2a)">
+      <Elements>
+        <Element AssemblyQualifiedName="Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" NumberOfArrivals="1" LocalVersion="3" entitiesPerInterval="1" Color="0" VectorSize="0" MatrixRows="0" MatrixColumns="0" Version="206" X="115" Y="75" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Create1">
+          <InputPoints />
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <TimeBetweenArrivals AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="0" />
+          </TimeBetweenArrivals>
+          <TimeOfFirstArrival AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="0" />
+          </TimeOfFirstArrival>
+          <Initialization>
+            <Setter AssemblyQualifiedName="Simphony.Modeling.LocalFloatingPointSetter`1[[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+              <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+                <References />
+                <Source />
+                <Value>0</Value>
+              </FormulaIndex>
+              <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+                <References>
+                  <Reference>Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                </References>
+                <Source>Public Partial Class Formulas
+	Public Shared Function Formula(ByVal Element As Simphony.General.Create) As System.Nullable(Of System.Double)
+		Return TimeNow
+	End Function
+End Class</Source>
+                <Value>0</Value>
+              </Value>
+            </Setter>
+          </Initialization>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.General.Destroy, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="550" Y="75" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Destroy1">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints />
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="340" Y="75" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="InverseTransform">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Initialize AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Initialize>
+          <Finalize AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Finalize>
+          <Formula AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="CSharp">
+            <References>
+              <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+              <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+              <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+            </References>
+            <Source>public static partial class Formulas
+{
+	public static System.Boolean Formula(Simphony.General.Execute Element)
+	{
+		// Parameters for the Uniform distribution 
+		const int UNIFORM_LOW = 0; 
+		const int UNIFORM_HIGH = 1; 
+		
+		// Parameters for the Weibull distribution
+		const double GAMMA = 1.0; // Scale
+		const double kSHAPE = 5.0; // Shape
+			
+		double x = 0.0; // Inputs to the Weibull PDF function
+		double y = 0.0; 
+		
+		TraceLine("");
+		TraceLine("Question 2 a) Random deviates from a two parameter Weibull distribution using the Inverse Transform method.");
+		TraceLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		
+		// Begin processing for a hundred random deviates 
+		for (int counter = 0; counter &lt; 100; counter++) 
+		{
+			
+			/* 1) Sample y from the Uniform Distribution as a random number
+			with values between 0 and 1 */
+			y = SampleUniform(UNIFORM_LOW, UNIFORM_HIGH);
+			
+			/* 2) Set x to be the inverse of the Cummulative Distribution Function 
+			of the Weibull distribution which is  1 - e * - ( x / gamma )^k */ 
+			x = 1 - System.Math.Log(System.Math.Pow((y / GAMMA), kSHAPE));	
+			
+			// Deliver x
+			TraceLine(System.String.Format ("({0:0000}) =&gt; {1}", counter+1, x));			
+		}
+		
+		return default(System.Boolean);
+	}
+}
+</Source>
+            <Value>true</Value>
+          </Formula>
+        </Element>
+      </Elements>
+      <Relationships>
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Create1" SourcePoint="OutputPoint" DestinationElement="InverseTransform" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="177" Y="100" />
+            <Point X="187" Y="100" />
+            <Point X="319" Y="100" />
+            <Point X="329" Y="100" />
+          </Points>
+          <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Category>
+          <Condition AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Condition>
+          <Trace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Trace>
+          <Globals />
+          <Locals />
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="InverseTransform" SourcePoint="OutputPoint" DestinationElement="Destroy1" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="407" Y="100" />
+            <Point X="417" Y="100" />
+            <Point X="524" Y="100" />
+            <Point X="534" Y="100" />
+          </Points>
+          <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Category>
+          <Condition AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Condition>
+          <Trace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Trace>
+          <Globals />
+          <Locals />
+        </Relationship>
+      </Relationships>
+      <Initialization />
+      <ParameterDefinitions />
+    </Scenario>
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8087" StartDate="2016-02-18T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Question 2b)">
+      <Elements>
+        <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="410" Y="210" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="AcceptanceRejection">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Initialize AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Initialize>
+          <Finalize AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Finalize>
+          <Formula AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="CSharp">
+            <References>
+              <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+              <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+              <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+            </References>
+            <Source>public static partial class Formulas
+{
+	public static System.Boolean Formula(Simphony.General.Execute Element)
+	{
+		// Parameters to the Uniform distribution 
+		const int UNIFORM_LOW = 0; 
+		// const int UNIFORM_HIGH = 1; 
+		
+		// Two parameters for the beta distribution, Low and High
+		// const double ALPHA = 4.0; 
+		// const double BETA = 3.0; 
+		const double LOW = 32.0; 
+		const double HIGH = 73.0;
+		
+		double x = 0.0; // A uniform random variate defined on the PDF f(x) with interval [a, b]
+		double X = 0.0; // A random variable with PDF function f(x) defined on the interval [a, b]
+		double y = 0.0; // A uniform random variate on the interval [0, c]	
+			
+		double c = 0.0; // Highest value of y from f(x)
+		
+		// Maximum value of f(x) defined for x in the interval[a, b] (from 32 - 72)
+		c  = 2.07; // 2.4576; 	
+		
+		TraceLine("");
+		TraceLine("Question 2 a) Random deviates from a Beta distribution using the Acceptance Rejection method.");
+		TraceLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		
+		// Begin processing for a hundred random deviates
+		for (int counter = 0; counter &lt; 100; counter++) 
+		{
+			x = SampleUniform(LOW, HIGH);
+			y = SampleUniform(UNIFORM_LOW, c);
+		
+			X = 30 * x * System.Math.Pow((1 - x), 4);
+			
+			// Find out if the point y falls on or below the PDF curve
+			while ( y &gt; X )
+			{
+				// 1) Generate random numbers that are uniformly distributed 
+				x = SampleUniform(LOW, HIGH);
+				y = SampleUniform(UNIFORM_LOW, c); // A value of y drawn from the sample
+				
+				X = 30 * x * System.Math.Pow((1 - x), 4); // Represents a likely value of y
+			}
+		
+			// If so then deliver x
+			TraceLine(System.String.Format ("({0:0000}) =&gt;	{1}", counter+1, x));
+			
+		} // End for
+		
+		return default(System.Boolean);
+	}
+}
+</Source>
+            <Value>true</Value>
+          </Formula>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" NumberOfArrivals="1" LocalVersion="3" entitiesPerInterval="1" Color="0" VectorSize="0" MatrixRows="0" MatrixColumns="0" Version="206" X="165" Y="210" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Create1">
+          <InputPoints />
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <TimeBetweenArrivals AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="0" />
+          </TimeBetweenArrivals>
+          <TimeOfFirstArrival AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="0" />
+          </TimeOfFirstArrival>
+          <Initialization>
+            <Setter AssemblyQualifiedName="Simphony.Modeling.LocalFloatingPointSetter`1[[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+              <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+                <References />
+                <Source />
+                <Value>0</Value>
+              </FormulaIndex>
+              <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+                <References>
+                  <Reference>Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                </References>
+                <Source>Public Partial Class Formulas
+	Public Shared Function Formula(ByVal Element As Simphony.General.Create) As System.Nullable(Of System.Double)
+		Return TimeNow
+	End Function
+End Class</Source>
+                <Value>0</Value>
+              </Value>
+            </Setter>
+          </Initialization>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.General.Destroy, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="630" Y="210" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Destroy1">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints />
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+        </Element>
+      </Elements>
+      <Relationships>
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="AcceptanceRejection" SourcePoint="OutputPoint" DestinationElement="Destroy1" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="477" Y="235" />
+            <Point X="487" Y="235" />
+            <Point X="604" Y="235" />
+            <Point X="614" Y="235" />
+          </Points>
+          <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Category>
+          <Condition AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Condition>
+          <Trace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Trace>
+          <Globals />
+          <Locals />
+        </Relationship>
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Create1" SourcePoint="OutputPoint" DestinationElement="AcceptanceRejection" DestinationPoint="InputPoint">
+          <Points>
+            <Point X="232" Y="235" />
+            <Point X="242" Y="235" />
+            <Point X="384" Y="235" />
+            <Point X="394" Y="235" />
+          </Points>
+          <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Category>
+          <Condition AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>true</Value>
+          </Condition>
+          <Trace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </Trace>
+          <Globals />
+          <Locals />
+        </Relationship>
+      </Relationships>
+      <Initialization />
+      <ParameterDefinitions />
+    </Scenario>
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-02-22T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Question3">
+      <Elements>
+        <Element AssemblyQualifiedName="Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Servers="0" Color="0" File="(Undefined)" Resource="(Undefined)" TaskType="Unconstrained" Version="206" X="440" Y="175" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Gamma">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Duration AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.Modeling.Task`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Gamma, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Shape="1" Scale="5" />
+          </Duration>
+          <Priority AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Priority>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Servers="0" Color="0" File="(Undefined)" Resource="(Undefined)" TaskType="Unconstrained" Version="206" X="650" Y="180" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="LogNormal">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Duration AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.Modeling.Task`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.LogNormal, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Location="0" Shape="1" />
+          </Duration>
+          <Priority AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Priority>
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Servers="0" Color="0" File="(Undefined)" Resource="(Undefined)" TaskType="Unconstrained" Version="206" X="205" Y="175" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Normal">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints>
+            <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
+          </OutputPoints>
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
+          <Duration AssemblyQualifiedName="Simphony.Modeling.DistributionFormula`1[[Simphony.Modeling.Task`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value AssemblyQualifiedName="Simphony.Mathematics.Normal, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Mean="7.7708510638297854" StandardDeviation="2.7694440872287167" />
+          </Duration>
+          <Priority AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Priority>
+        </Element>
+      </Elements>
+      <Relationships />
+      <Initialization />
+      <ParameterDefinitions />
+    </Scenario>
+  </Scenarios>
+  <Calendars>
+    <Calendar>
+      <UID>1</UID>
+      <Name>Standard</Name>
+      <IsBaseCalendar>1</IsBaseCalendar>
+      <IsBaselineCalendar>0</IsBaselineCalendar>
+      <BaseCalendarUID>-1</BaseCalendarUID>
+      <WeekDays>
+        <WeekDay SerialVersion="1">
+          <DayType>2</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>3</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>4</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>5</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>6</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>08:00:00</FromTime>
+              <ToTime>12:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>13:00:00</FromTime>
+              <ToTime>17:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>7</DayType>
+          <DayWorking>0</DayWorking>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>1</DayType>
+          <DayWorking>0</DayWorking>
+        </WeekDay>
+      </WeekDays>
+      <Exceptions />
+    </Calendar>
+    <Calendar>
+      <UID>3</UID>
+      <Name>24 Hours</Name>
+      <IsBaseCalendar>1</IsBaseCalendar>
+      <IsBaselineCalendar>0</IsBaselineCalendar>
+      <BaseCalendarUID>-1</BaseCalendarUID>
+      <WeekDays>
+        <WeekDay SerialVersion="1">
+          <DayType>2</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>3</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>4</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>5</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>6</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>7</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>1</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+      </WeekDays>
+      <Exceptions />
+    </Calendar>
+    <Calendar>
+      <UID>4</UID>
+      <Name>Night Shift</Name>
+      <IsBaseCalendar>1</IsBaseCalendar>
+      <IsBaselineCalendar>0</IsBaselineCalendar>
+      <BaseCalendarUID>-1</BaseCalendarUID>
+      <WeekDays>
+        <WeekDay SerialVersion="1">
+          <DayType>2</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>3</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>4</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>5</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>6</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>23:00:00</FromTime>
+              <ToTime>00:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>7</DayType>
+          <DayWorking>1</DayWorking>
+          <WorkingTimes>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimes>
+          <WorkingTimesWithShifts>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>00:00:00</FromTime>
+              <ToTime>03:00:00</ToTime>
+            </WorkingTime>
+            <WorkingTime PayType="RT" Shift="1">
+              <FromTime>04:00:00</FromTime>
+              <ToTime>08:00:00</ToTime>
+            </WorkingTime>
+          </WorkingTimesWithShifts>
+        </WeekDay>
+        <WeekDay SerialVersion="1">
+          <DayType>1</DayType>
+          <DayWorking>0</DayWorking>
+        </WeekDay>
+      </WeekDays>
+      <Exceptions />
+    </Calendar>
+  </Calendars>
+  <WeatherParameters EndYear="2012" StartYear="1993" StationId="1865" StationName="EDMONTON INT'L A">
+    <MatrixA AssemblyQualifiedName="Simphony.Mathematics.Matrix, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" ColumnCount="3" RowCount="3">
+      <Item>0.87328991021169233</Item>
+      <Item>0.018580214248465943</Item>
+      <Item>-0.11224041853975913</Item>
+      <Item>-0.19009509909949038</Item>
+      <Item>0.67072601566650891</Item>
+      <Item>-0.045658947610996814</Item>
+      <Item>0.13151426373984557</Item>
+      <Item>0.095986134641681153</Item>
+      <Item>0.18550125852971722</Item>
+    </MatrixA>
+    <MatrixB AssemblyQualifiedName="Simphony.Mathematics.Matrix, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" ColumnCount="3" RowCount="3">
+      <Item>0.50602243787830092</Item>
+      <Item>0</Item>
+      <Item>0</Item>
+      <Item>0.10573408841231094</Item>
+      <Item>0.66449026798739419</Item>
+      <Item>0</Item>
+      <Item>0.051649821950357749</Item>
+      <Item>0.16527725282884512</Item>
+      <Item>0.95129765623231533</Item>
+    </MatrixB>
+    <CoefficientsDry>
+      <GustMaxMean>
+        <Item>-1.4680908251662639E-10</Item>
+        <Item>1.329423832886452E-07</Item>
+        <Item>-4.2058422341929071E-05</Item>
+        <Item>0.0053079656214101989</Item>
+        <Item>-0.20521972261663315</Item>
+        <Item>34.81827108806597</Item>
+      </GustMaxMean>
+      <GustMaxStdDev>
+        <Item>-1.3439629186430441E-10</Item>
+        <Item>1.1961062747069742E-07</Item>
+        <Item>-3.7081429431468222E-05</Item>
+        <Item>0.0046314712597756219</Item>
+        <Item>-0.19181513459245247</Item>
+        <Item>8.4188129110747223</Item>
+      </GustMaxStdDev>
+      <TempMaxMean>
+        <Item>-1.0166974838191057E-13</Item>
+        <Item>2.6502828534725402E-08</Item>
+        <Item>-2.0888592158122322E-05</Item>
+        <Item>0.00449484381534133</Item>
+        <Item>-0.14539101843670482</Item>
+        <Item>-17.235042840901187</Item>
+      </TempMaxMean>
+      <TempMaxStdDev>
+        <Item>1.6416553745031109E-11</Item>
+        <Item>-1.7028477790737948E-08</Item>
+        <Item>6.6682756697696005E-06</Item>
+        <Item>-0.00097779854713447834</Item>
+        <Item>0.004829922088905367</Item>
+        <Item>9.37361414138446</Item>
+      </TempMaxStdDev>
+      <TempMinMean>
+        <Item>2.2525885658642806E-11</Item>
+        <Item>8.0025687451642885E-09</Item>
+        <Item>-1.6322939325367E-05</Item>
+        <Item>0.0041104251622096459</Item>
+        <Item>-0.11951449917024201</Item>
+        <Item>-4.7305537951880865</Item>
+      </TempMinMean>
+      <TempMinStdDev>
+        <Item>6.7731915004491011E-12</Item>
+        <Item>-7.1206592756322537E-09</Item>
+        <Item>2.7742630535466119E-06</Item>
+        <Item>-0.00031682175835857234</Item>
+        <Item>-0.029067502781765016</Item>
+        <Item>9.17231845029877</Item>
+      </TempMinStdDev>
+    </CoefficientsDry>
+    <CoefficientsWet>
+      <GustMaxMean>
+        <Item>-8.781144147493697E-11</Item>
+        <Item>8.5468116033233925E-08</Item>
+        <Item>-2.87380208123261E-05</Item>
+        <Item>0.0036005150052658454</Item>
+        <Item>-0.080970231512472651</Item>
+        <Item>34.762757773867548</Item>
+      </GustMaxMean>
+      <GustMaxStdDev>
+        <Item>-3.5737459392873316E-12</Item>
+        <Item>5.3577643132669944E-09</Item>
+        <Item>-2.3273154774688834E-06</Item>
+        <Item>0.00024334658351920246</Item>
+        <Item>0.02673166931322938</Item>
+        <Item>6.711173765579554</Item>
+      </GustMaxStdDev>
+      <TempMaxMean>
+        <Item>6.8575235264606221E-12</Item>
+        <Item>1.762909964541621E-08</Item>
+        <Item>-1.7167595081162048E-05</Item>
+        <Item>0.00373423091098676</Item>
+        <Item>-0.056104683341495709</Item>
+        <Item>-21.048777454609613</Item>
+      </TempMaxMean>
+      <TempMaxStdDev>
+        <Item>-1.4447113975548186E-11</Item>
+        <Item>8.8239057780350029E-09</Item>
+        <Item>-8.1468777252897516E-07</Item>
+        <Item>-0.00014614287111676524</Item>
+        <Item>-0.01360486386487314</Item>
+        <Item>7.5772097013878614</Item>
+      </TempMaxStdDev>
+      <TempMinMean>
+        <Item>5.453698535854641E-11</Item>
+        <Item>-1.8498281354901569E-08</Item>
+        <Item>-8.59812427891596E-06</Item>
+        <Item>0.0031098665553966828</Item>
+        <Item>-0.053465655388407682</Item>
+        <Item>-11.100171814290118</Item>
+      </TempMinMean>
+      <TempMinStdDev>
+        <Item>-2.1848641572238686E-11</Item>
+        <Item>1.7999706560440932E-08</Item>
+        <Item>-4.8612939573681175E-06</Item>
+        <Item>0.00056744405055809358</Item>
+        <Item>-0.050288707401709362</Item>
+        <Item>8.0919823088284168</Item>
+      </TempMinStdDev>
+    </CoefficientsWet>
+    <PrecipitationParameters>
+      <Record Month="1" Scale="2.7020224917829814" Shape="0.7711669364620436" WetFromDry="0.2131578947368421" WetFromWet="0.60849056603773588" WetProbability="0.35876623376623379" />
+      <Record Month="2" Scale="2.2738132201206063" Shape="0.6347090709880997" WetFromDry="0.22105263157894736" WetFromWet="0.48101265822784811" WetProbability="0.28877005347593582" />
+      <Record Month="3" Scale="3.31165795947702" Shape="0.56837333068460227" WetFromDry="0.20924574209245742" WetFromWet="0.5168539325842697" WetProbability="0.30342577487765088" />
+      <Record Month="4" Scale="7.1070889540567048" Shape="0.46261961952819969" WetFromDry="0.22842639593908629" WetFromWet="0.42948717948717946" WetProbability="0.28695652173913044" />
+      <Record Month="5" Scale="8.6686764942968857" Shape="0.49534130050845482" WetFromDry="0.29261363636363635" WetFromWet="0.51196172248803828" WetProbability="0.36815068493150682" />
+      <Record Month="6" Scale="10.521051960003588" Shape="0.52657030404114447" WetFromDry="0.37992831541218636" WetFromWet="0.5962264150943396" WetProbability="0.48056537102473496" />
+      <Record Month="7" Scale="11.227015673788868" Shape="0.52445047461513561" WetFromDry="0.44210526315789472" WetFromWet="0.56183745583038869" WetProbability="0.49659863945578231" />
+      <Record Month="8" Scale="10.689841942622753" Shape="0.41595191031423356" WetFromDry="0.301994301994302" WetFromWet="0.50684931506849318" WetProbability="0.3837011884550085" />
+      <Record Month="9" Scale="8.3710200580627969" Shape="0.44704494748137552" WetFromDry="0.22459893048128343" WetFromWet="0.4913294797687861" WetProbability="0.31690140845070425" />
+      <Record Month="10" Scale="5.2251410658307238" Shape="0.44400715134207619" WetFromDry="0.21026894865525672" WetFromWet="0.43949044585987262" WetProbability="0.28109028960817717" />
+      <Record Month="11" Scale="2.5069530312527144" Shape="0.89457682594794985" WetFromDry="0.19796954314720813" WetFromWet="0.52287581699346408" WetProbability="0.28521126760563381" />
+      <Record Month="12" Scale="2.3643105585362654" Shape="0.66546789946205587" WetFromDry="0.22" WetFromWet="0.46875" WetProbability="0.28987993138936535" />
+    </PrecipitationParameters>
+  </WeatherParameters>
+</Model>
