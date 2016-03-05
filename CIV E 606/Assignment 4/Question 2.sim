@@ -434,7 +434,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		TraceLine (System.String.Format("BID	STATUS						COST ($)"));
+		TraceLine (System.String.Format("[[ BID ]]	[[ ACTIVITY STATUS ]]					[[ COST ($) ]]"));
 		return true ;
 	}
 }
@@ -1564,7 +1564,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("SUCCESFUL PROJECT PROPOSAL!! :: Accumulated value for cycle is: ${0:0,0.00} \r\n {1}", GX[0], "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "SUCCESFUL PROJECT PROPOSAL!!", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "*** Successful Project Proposal!!", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1618,7 +1618,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("PROJECT APPROVED AFTER FIRST STUDY :: Accumulated costs are: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "PROJECT APPROVED AFTER FIRST STUDY", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Project Approved After First Study", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1672,7 +1672,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("REJECTED PROJECT PLANS REPORT :: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "REJECTED PROJECT PLANS REPORT", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}					${2:0,0.00} \r\n {3}", GX[1], "Rejected Project Plans Report", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1726,7 +1726,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("UNAPPROVED ENGINEERING &amp; SALES REPORT: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "UNAPPROVED ENGINEERING &amp; SALES REPORT", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Unapproved Engineering &amp; Sales Report", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1780,7 +1780,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("INITIAL STUDY REPORTS NOT RECOMMENDED :: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}	${2:0,0.00} \r\n {3}", GX[1], "INITIAL STUDY REPORTS NOT RECOMMENDED", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Initial Study Reports Not Recommended", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1834,7 +1834,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("INITIAL STUDY REPORTS NOT APPROVED :: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "INITIAL STUDY REPORTS NOT APPROVED", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Initial Study Reports Not Approved", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1888,7 +1888,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("UNAPPROVED SALES REPORT :: Accumulated value for cycle is: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "UNAPPROVED SALES REPORT", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}					${2:0,0.00} \r\n {3}", GX[1], "Unapproved Sales Report", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1942,7 +1942,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("UNAPPROVED ENGINEERING REPORT :: Accumulated value for cycle is: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "UNAPPROVED ENGINEERING REPORT", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Unapproved Engineering Report", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1996,7 +1996,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("FORMALIZED PROJECT :: Accumulated costs are: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "FORMALIZED PROJECT", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}						${2:0,0.00} \r\n {3}", GX[1], "Formalized Project", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -2050,7 +2050,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("SECOND STUDY PROJECT APPROVED :: Accumulated costs are: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}		${2:0,0.00} \r\n {3}", GX[1], "SECOND STUDY PROJECT APPROVED", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Second Study Project Approved", GX[0],  "*************************************************************************************************************");
 	}
 }
 </Source>
