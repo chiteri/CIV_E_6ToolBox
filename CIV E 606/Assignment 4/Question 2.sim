@@ -379,7 +379,7 @@ End Class</Source>
             <Value>0</Value>
           </Priority>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.64" Version="206" X="940" Y="1165" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="false" name="Engineering report approval?">
+        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.8" Version="206" X="940" Y="1165" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="false" name="Engineering report approval?">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="56" Y="20" name="InputPoint1" />
           </InputPoints>
@@ -1389,7 +1389,7 @@ End Class</Source>
             <Value>0</Value>
           </Priority>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.81" Version="206" X="965" Y="1070" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="false" name="Sales report approval?">
+        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.9" Version="206" X="965" Y="1070" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="false" name="Sales report approval?">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="56" Y="20" name="InputPoint1" />
           </InputPoints>
