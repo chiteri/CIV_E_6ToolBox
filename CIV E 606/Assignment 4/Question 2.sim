@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Model Version="206" DebugEnabled="false" TraceEnabled="true" name="Model" xmlns="http://irc.construction.ualberta.ca/Simphony/Modeling">
   <Scenarios>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="3" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-03-02T00:00:00" TimeUnit="Hour" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Contract Bidding">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-03-02T00:00:00" TimeUnit="Hour" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Contract Bidding">
       <Elements>
         <Element AssemblyQualifiedName="Simphony.General.Capture, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" CaptureType="Single" SerialVersion="2" File="Internal studyQ" Resource="Internal study" Version="206" X="5" Y="575" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Capture 1st internal study">
           <InputPoints>
@@ -1460,7 +1460,7 @@ End Class</Source>
             <Source />
             <Value />
           </Category>
-          <Expression AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Trace, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+          <Expression AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Trace, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="CSharp">
             <References>
               <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
               <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
@@ -1475,11 +1475,13 @@ End Class</Source>
               <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
               <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
             </References>
-            <Source>Public Partial Class Formulas
-	Public Shared Function Formula(ByVal Element As Simphony.General.Trace) As System.String
-		Return GN(0).ToString()
-	End Function
-End Class
+            <Source>public static partial class Formulas
+{
+	public static System.String Formula(Simphony.General.Trace Element)
+	{
+		return System.String.Format("Accumulated value for cycle is: ${0:0,0.00}", GX[0]);
+	}
+}
 </Source>
             <Value />
           </Expression>
