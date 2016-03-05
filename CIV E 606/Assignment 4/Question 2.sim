@@ -648,7 +648,7 @@ End Class</Source>
           </OutgoingTrace>
           <EmissionsConfig COEmissionRateIdle="0" COEmissionRateUtilized="0" CO2EmissionRateIdle="0" CO2EmissionRateUtilized="0" HCEmissionRateIdle="0" HCEmissionRateUtilized="0" NOxEmissionRateIdle="0" NOxEmissionRateUtilized="0" PMEmissionRateIdle="0" PMEmissionRateUtilized="0" />
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.59049" Version="206" X="1080" Y="525" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="internal study 1 report recommendation?">
+        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.59049" Version="206" X="830" Y="570" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Internal study 1 report recommendation?">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint1" />
           </InputPoints>
@@ -891,7 +891,7 @@ End Class</Source>
             <Value>0</Value>
           </Priority>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.40951" Version="206" X="830" Y="570" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Positive internal study 1 report approval?">
+        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.40951" Version="206" X="1080" Y="525" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Positive internal study 1 report approval?">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint1" />
           </InputPoints>
@@ -2002,7 +2002,7 @@ End Class</Source>
         </Element>
       </Elements>
       <Relationships>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Approved reports" SourcePoint="OutputPoint" DestinationElement="internal study 1 report recommendation?" DestinationPoint="InputPoint1">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Approved reports" SourcePoint="OutputPoint" DestinationElement="Positive internal study 1 report approval?" DestinationPoint="InputPoint1">
           <Points>
             <Point X="1027" Y="615" />
             <Point X="1037" Y="615" />
@@ -2227,7 +2227,7 @@ End Class</Source>
           <Globals />
           <Locals />
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Consolidate 1st internal studies reports" SourcePoint="OutputPoint1" DestinationElement="Positive internal study 1 report approval?" DestinationPoint="InputPoint1">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Consolidate 1st internal studies reports" SourcePoint="OutputPoint1" DestinationElement="Internal study 1 report recommendation?" DestinationPoint="InputPoint1">
           <Points>
             <Point X="732" Y="610" />
             <Point X="742" Y="610" />
@@ -2635,12 +2635,12 @@ End Class</Source>
             <Point X="-446" Y="285" />
           </Points>
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="internal study 1 report recommendation?" SourcePoint="OutputPoint1" DestinationElement="Release 1st internal study" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Internal study 1 report recommendation?" SourcePoint="OutputPoint1" DestinationElement="Approved reports" DestinationPoint="InputPoint">
           <Points>
-            <Point X="1147" Y="537.5" />
-            <Point X="1157" Y="537.5" />
-            <Point X="1249" Y="605" />
-            <Point X="1259" Y="605" />
+            <Point X="897" Y="582.5" />
+            <Point X="907" Y="582.5" />
+            <Point X="934" Y="615" />
+            <Point X="944" Y="615" />
           </Points>
           <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
@@ -2660,12 +2660,12 @@ End Class</Source>
           <Globals />
           <Locals />
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="internal study 1 report recommendation?" SourcePoint="OutputPoint2" DestinationElement="Trace4" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Internal study 1 report recommendation?" SourcePoint="OutputPoint2" DestinationElement="Trace5" DestinationPoint="InputPoint">
           <Points>
-            <Point X="1142" Y="562.5" />
-            <Point X="1152" Y="562.5" />
-            <Point X="1080" Y="634" />
-            <Point X="1090" Y="634" />
+            <Point X="897" Y="607.5" />
+            <Point X="907" Y="607.5" />
+            <Point X="850" Y="674" />
+            <Point X="850" Y="684" />
           </Points>
           <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
@@ -2785,12 +2785,12 @@ End Class</Source>
           <Globals />
           <Locals />
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Positive internal study 1 report approval?" SourcePoint="OutputPoint1" DestinationElement="Approved reports" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Positive internal study 1 report approval?" SourcePoint="OutputPoint1" DestinationElement="Release 1st internal study" DestinationPoint="InputPoint">
           <Points>
-            <Point X="897" Y="582.5" />
-            <Point X="907" Y="582.5" />
-            <Point X="934" Y="615" />
-            <Point X="944" Y="615" />
+            <Point X="1147" Y="537.5" />
+            <Point X="1157" Y="537.5" />
+            <Point X="1249" Y="605" />
+            <Point X="1259" Y="605" />
           </Points>
           <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
@@ -2810,12 +2810,12 @@ End Class</Source>
           <Globals />
           <Locals />
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Positive internal study 1 report approval?" SourcePoint="OutputPoint2" DestinationElement="Trace5" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Positive internal study 1 report approval?" SourcePoint="OutputPoint2" DestinationElement="Trace4" DestinationPoint="InputPoint">
           <Points>
-            <Point X="897" Y="607.5" />
-            <Point X="907" Y="607.5" />
-            <Point X="850" Y="674" />
-            <Point X="850" Y="684" />
+            <Point X="1142" Y="562.5" />
+            <Point X="1152" Y="562.5" />
+            <Point X="1080" Y="634" />
+            <Point X="1090" Y="634" />
           </Points>
           <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
