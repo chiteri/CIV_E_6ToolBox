@@ -302,8 +302,9 @@ End Class</Source>
 		// Perform computations 		
 		totalEngineeringInformationCost = FIXED_COST + (VARIABLE_COST * ENGINEERING_INFORMATION_TIME);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalEngineeringInformationCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += ENGINEERING_INFORMATION_TIME ; // Time  
+		GX[1] += totalEngineeringInformationCost; // Money
 		
 		return ENGINEERING_INFORMATION_TIME; // Duration for task in hours
 	}
@@ -364,8 +365,9 @@ End Class</Source>
 		engineeringStudyTime = SampleTriangular(16, 40, 24);			
 		totalEngineeringStudyCost = FIXED_COST + (VARIABLE_COST * engineeringStudyTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalEngineeringStudyCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += engineeringStudyTime ; // Time  
+		GX[1] += totalEngineeringStudyCost; // Money
 		
 		return engineeringStudyTime; // Duration for task in hours
 	}
@@ -465,7 +467,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		GX[1] += 1; // Increment the runs counter 
+		GX[2] += 1; // Increment the runs counter 
 		return true;
 	}
 }
@@ -520,8 +522,9 @@ End Class</Source>
 		financialStudyTime = SampleTriangular(10, 26, 16);			
 		totalFinancialStudyCost = FIXED_COST + (VARIABLE_COST * financialStudyTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalFinancialStudyCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += financialStudyTime ; // Time 
+		GX[1] += totalFinancialStudyCost; // Money  
 		
 		return financialStudyTime; // Duration for task in hours
 	}
@@ -582,8 +585,9 @@ End Class</Source>
 		plansFormalizationTime = SampleTriangular(40, 160, 80);			
 		totalPlansFormalizationCost = FIXED_COST + (VARIABLE_COST * plansFormalizationTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalPlansFormalizationCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += plansFormalizationTime ; // Time  
+		GX[1] += totalPlansFormalizationCost; // Money 
 		
 		return plansFormalizationTime; // Duration for task in hours
 	}
@@ -691,8 +695,9 @@ End Class</Source>
 		initialClientContactTime = SampleTriangular(1, 4, 2);			
 		totalInitialClientContactCost = FIXED_COST + (VARIABLE_COST * initialClientContactTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalInitialClientContactCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += initialClientContactTime ; // Time  
+		GX[1] += totalInitialClientContactCost; // Money 
 		
 		return initialClientContactTime; // Duration for task in hours 
 	}
@@ -804,8 +809,9 @@ End Class</Source>
 		// Perform computations 		
 		totalManagementConferenceCost = FIXED_COST + (VARIABLE_COST * MANAGEMENT_CONFERENCE_TIME);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalManagementConferenceCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += MANAGEMENT_CONFERENCE_TIME ; // Time  
+		GX[1] += totalManagementConferenceCost; // Money    
 		
 		return MANAGEMENT_CONFERENCE_TIME; // Duration for task in hours
 	}
@@ -866,8 +872,9 @@ End Class</Source>
 		marketingStudyTime = SampleTriangular(8, 40, 24);			
 		totalMarketingStudyCost = FIXED_COST + (VARIABLE_COST * marketingStudyTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalMarketingStudyCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += marketingStudyTime ; // Time  
+		GX[1] += totalMarketingStudyCost; // Money 
 		
 		return marketingStudyTime; // Duration for task in hours
 	}
@@ -951,8 +958,9 @@ End Class</Source>
 		negotiationConferenceTime = SampleTriangular(2, 16, 6);			
 		totalNegotiationConferenceCost = FIXED_COST + (VARIABLE_COST * negotiationConferenceTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalNegotiationConferenceCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += negotiationConferenceTime ; // Time  
+		GX[1] += totalNegotiationConferenceCost; // Money 
 		
 		return negotiationConferenceTime; // Duration for task in hours
 	}
@@ -1032,8 +1040,9 @@ End Class</Source>
 		productionStudyTime = SampleTriangular(8, 40, 24);			
 		totalProductionStudyCost = FIXED_COST + (VARIABLE_COST * productionStudyTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalProductionStudyCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += productionStudyTime ; // Time 
+		GX[1] += totalProductionStudyCost; // Money
 		
 		return productionStudyTime; // Duration for task in hours
 	}
@@ -1047,7 +1056,7 @@ End Class</Source>
             <Value>0</Value>
           </Priority>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="-450" Y="165" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Project cost">
+        <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="-445" Y="420" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Project cost">
           <InputPoints />
           <OutputPoints />
         </Element>
@@ -1098,8 +1107,9 @@ End Class</Source>
 		purchasingStudyTime = SampleTriangular(16, 40, 24);			
 		totalPurchasingStudyCost = FIXED_COST + (VARIABLE_COST * purchasingStudyTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalPurchasingStudyCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += purchasingStudyTime ; // Time 
+		GX[1] += totalPurchasingStudyCost; // Money  
 		
 		return purchasingStudyTime; // Duration for task in hours
 	}
@@ -1264,8 +1274,9 @@ End Class</Source>
 		initialReportingToPresidentTime = SampleTriangular(5, 35, 25);			
 		totalInitialReportingToPresidentCost = FIXED_COST + (VARIABLE_COST * initialReportingToPresidentTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalInitialReportingToPresidentCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += initialReportingToPresidentTime ; // Time  
+		GX[1] += totalInitialReportingToPresidentCost; // Money
 		
 		return initialReportingToPresidentTime; // Duration for task in hours
 	}
@@ -1326,8 +1337,9 @@ End Class</Source>
 		initialReportingToVPTime = SampleTriangular(5, 25, 10);			
 		totalInitialReportingToVPCost = FIXED_COST + (VARIABLE_COST * initialReportingToVPTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalInitialReportingToVPCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += initialReportingToVPTime ; // Time  
+		GX[1] += totalInitialReportingToVPCost; // Money 
 		
 		return initialReportingToVPTime; // Duration for task in hours 
 	}
@@ -1388,8 +1400,9 @@ End Class</Source>
 		revisionsAndModificationsTime = SampleTriangular(20, 80, 40);			
 		totalRevisionsAndModificationsCost = FIXED_COST + (VARIABLE_COST * revisionsAndModificationsTime);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalRevisionsAndModificationsCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += revisionsAndModificationsTime ; // Time  
+		GX[1] += totalRevisionsAndModificationsCost; // Money 
 		
 		return revisionsAndModificationsTime; // Duration for task in hours
 	}
@@ -1449,8 +1462,9 @@ End Class</Source>
 		// Perform computations 		
 		totalSalesInformationCost = FIXED_COST + (VARIABLE_COST * SALES_INFORMATION_TIME);
 		
-		// Accumulate it to the entire cost of run 
-		GX[0] += totalSalesInformationCost; 
+		// Accumulate both to the entire cost of run 
+		GX[0] += SALES_INFORMATION_TIME ; // Time  
+		GX[1] += totalSalesInformationCost; // Money
 		
 		return SALES_INFORMATION_TIME; // Duration for task in hours
 	}
@@ -1564,7 +1578,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("SUCCESFUL PROJECT PROPOSAL!! :: Accumulated value for cycle is: ${0:0,0.00} \r\n {1}", GX[0], "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "*** Successful Project Proposal!!", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[2], "*** Successful Project Proposal!!", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1618,7 +1632,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("PROJECT APPROVED AFTER FIRST STUDY :: Accumulated costs are: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Project Approved After First Study", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[2], "Project Approved After First Study", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1672,7 +1686,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("REJECTED PROJECT PLANS REPORT :: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}					${2:0,0.00} \r\n {3}", GX[1], "Rejected Project Plans Report", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}					${2:0,0.00} \r\n {3}", GX[2], "Rejected Project Plans Report", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1726,7 +1740,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("UNAPPROVED ENGINEERING &amp; SALES REPORT: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Unapproved Engineering &amp; Sales Report", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[2], "Unapproved Engineering &amp; Sales Report", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1780,7 +1794,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("INITIAL STUDY REPORTS NOT RECOMMENDED :: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Initial Study Reports Not Recommended", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[2], "Initial Study Reports Not Recommended", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1834,7 +1848,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("INITIAL STUDY REPORTS NOT APPROVED :: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Initial Study Reports Not Approved", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[2], "Initial Study Reports Not Approved", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1888,7 +1902,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("UNAPPROVED SALES REPORT :: Accumulated value for cycle is: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}					${2:0,0.00} \r\n {3}", GX[1], "Unapproved Sales Report", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}					${2:0,0.00} \r\n {3}", GX[2], "Unapproved Sales Report", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1942,7 +1956,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("UNAPPROVED ENGINEERING REPORT :: Accumulated value for cycle is: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Unapproved Engineering Report", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[2], "Unapproved Engineering Report", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -1996,7 +2010,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("FORMALIZED PROJECT :: Accumulated costs are: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}						${2:0,0.00} \r\n {3}", GX[1], "Formalized Project", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}						${2:0,0.00} \r\n {3}", GX[2], "Formalized Project", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -2050,7 +2064,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("SECOND STUDY PROJECT APPROVED :: Accumulated costs are: ${0:0,0.00}", GX[0]);
-		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[1], "Second Study Project Approved", GX[0],  "*************************************************************************************************************");
+		return System.String.Format("{0}	{1}				${2:0,0.00} \r\n {3}", GX[2], "Second Study Project Approved", GX[1],  "*************************************************************************************************************");
 	}
 }
 </Source>
@@ -3564,6 +3578,18 @@ End Class</Source>
             <References />
             <Source />
             <Value>1</Value>
+          </FormulaIndex>
+          <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Value>
+        </Setter>
+        <Setter AssemblyQualifiedName="Simphony.Modeling.GlobalFloatingPointSetter, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+          <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>2</Value>
           </FormulaIndex>
           <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
