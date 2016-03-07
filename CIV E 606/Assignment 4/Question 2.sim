@@ -84,7 +84,7 @@
           </Servers>
           <Resources />
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.5" Version="206" X="-75" Y="995" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Client does not Request Revisions? ">
+        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.12" Version="206" X="-75" Y="995" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Client does not Request Revisions? ">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint1" />
           </InputPoints>
@@ -103,7 +103,7 @@
             <Value />
           </OutgoingTrace>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.5" Version="206" X="-240" Y="1145" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="false" name="Client evaulation positive?">
+        <Element AssemblyQualifiedName="Simphony.General.ProbabilisticBranch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Color="0" BranchCount="2" Probabilities="0.44" Version="206" X="-240" Y="1145" Description="" Visible="true" Orientation="Rotated180" ReportStatistics="false" name="Client evaulation positive?">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="56" Y="20" name="InputPoint1" />
           </InputPoints>
