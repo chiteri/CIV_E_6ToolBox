@@ -1690,7 +1690,7 @@ End Class</Source>
 	public static System.String Formula(Simphony.General.Trace Element)
 	{
 		// return System.String.Format("REJECTED PROJECT PLANS REPORT :: Accumulated costs are: ${0:0,0.00} \r\n {1}", GX[0],  "*************************************************************************************************************");
-		return System.String.Format("{0}	{1}					${2:0,0.00}	{3:0,0.00} \r\n", GX[2], "Rejected Project Plans Report", GX[1], GX[0], "*********************************************************************************************************************************************");
+		return System.String.Format("{0}	{1}					${2:0,0.00}	{3:0,0.00} \r\n {4}", GX[2], "Rejected Project Plans Report", GX[1], GX[0], "*********************************************************************************************************************************************");
 	}
 }
 </Source>
