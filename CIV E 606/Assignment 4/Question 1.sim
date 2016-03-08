@@ -165,7 +165,7 @@
           </Servers>
           <Resources />
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Capture, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" CaptureType="Single" SerialVersion="2" File="Shovel1Q" Resource="Shovel1" Version="206" X="700" Y="1140" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="CaptureShovel2">
+        <Element AssemblyQualifiedName="Simphony.General.Capture, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" CaptureType="Single" SerialVersion="2" File="Shovel1Q" Resource="Shovel2" Version="206" X="700" Y="1140" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="CaptureShovel2">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -194,7 +194,7 @@
           </Servers>
           <Resources />
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Capture, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" CaptureType="Single" SerialVersion="2" File="Shovel1Q" Resource="Shovel1" Version="206" X="700" Y="1970" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="CaptureShovel3">
+        <Element AssemblyQualifiedName="Simphony.General.Capture, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" CaptureType="Single" SerialVersion="2" File="Shovel3Q" Resource="Shovel3" Version="206" X="700" Y="1970" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="CaptureShovel3">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -1360,22 +1360,6 @@
             <Value>0</Value>
           </Priority>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.File, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" IsBlocking="false" Priority="0" Color="0" Version="206" X="420" Y="1665" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="File4">
-          <InputPoints>
-            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
-          </InputPoints>
-          <OutputPoints />
-          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
-            <References />
-            <Source />
-            <Value />
-          </IncomingTrace>
-          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
-            <References />
-            <Source />
-            <Value />
-          </OutgoingTrace>
-        </Element>
         <Element AssemblyQualifiedName="Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Servers="0" Color="0" File="(Undefined)" Resource="(Undefined)" TaskType="Unconstrained" Version="206" X="1395" Y="160" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Haul1">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
@@ -2271,7 +2255,7 @@
           </Servers>
           <Resources />
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Release, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" ReleaseType="Single" SerialVersion="2" File="(Undefined)" Resource="Shovel1" Version="206" X="995" Y="1795" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="ReleaseShovel3">
+        <Element AssemblyQualifiedName="Simphony.General.Release, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" ReleaseType="Single" SerialVersion="2" File="(Undefined)" Resource="Shovel3" Version="206" X="995" Y="1795" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="ReleaseShovel3">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -2535,6 +2519,22 @@
             <Value />
           </OutgoingTrace>
           <EmissionsConfig COEmissionRateIdle="0" COEmissionRateUtilized="0" CO2EmissionRateIdle="0" CO2EmissionRateUtilized="0" HCEmissionRateIdle="0" HCEmissionRateUtilized="0" NOxEmissionRateIdle="0" NOxEmissionRateUtilized="0" PMEmissionRateIdle="0" PMEmissionRateUtilized="0" />
+        </Element>
+        <Element AssemblyQualifiedName="Simphony.General.File, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" IsBlocking="false" Priority="0" Color="0" Version="206" X="420" Y="1665" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Shovel3Q">
+          <InputPoints>
+            <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
+          </InputPoints>
+          <OutputPoints />
+          <IncomingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </IncomingTrace>
+          <OutgoingTrace AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Element`1[[Simphony.Simulation.GeneralEntity, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value />
+          </OutgoingTrace>
         </Element>
         <Element AssemblyQualifiedName="Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Servers="1" Color="0" File="(Undefined)" Resource="(Undefined)" TaskType="Constrained" Version="206" X="805" Y="1795" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Task7">
           <InputPoints>
@@ -4332,7 +4332,7 @@
             <Point X="404" Y="860" />
           </Points>
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Shovel3" SourcePoint="OutputPoint" DestinationElement="File4" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.Modeling.RelationshipBase, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Shovel3" SourcePoint="OutputPoint" DestinationElement="Shovel3Q" DestinationPoint="InputPoint">
           <Points>
             <Point X="327" Y="1690" />
             <Point X="337" Y="1690" />
