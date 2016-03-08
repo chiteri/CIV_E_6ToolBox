@@ -1764,7 +1764,7 @@
 		// Assign the tuck capacity
 		LN[2] = 50; // Capacity in tons
 
-		return System.String.Format("Large Truck {0}", GN[2].ToString());
+		return System.String.Format("Large Truck {0}", GN[1].ToString());
 	}
 }
 </Source>
@@ -1818,12 +1818,12 @@
 	public static System.String Formula(Simphony.General.SetAttribute Element)
 	{
 		// Increment the counter used to tag the large truck entities
-		GN[2] += 1;
+		GN[3] += 1;
 		
 		// Assign the tuck capacity
 		LN[2] = 50; // Capacity in tons
 
-		return System.String.Format("Large Truck {0}", GN[2].ToString());
+		return System.String.Format("Large Truck {0}", GN[3].ToString());
 	}
 }
 </Source>
@@ -1877,12 +1877,12 @@
 	public static System.String Formula(Simphony.General.SetAttribute Element)
 	{
 		// Increment the counter used to tag the large truck entities
-		GN[2] += 1;
+		GN[5] += 1;
 		
 		// Assign the tuck capacity
 		LN[2] = 50; // Capacity in tons
 
-		return System.String.Format("Large Truck {0}", GN[2].ToString());
+		return System.String.Format("Large Truck {0}", GN[5].ToString());
 	}
 }
 </Source>
@@ -1941,7 +1941,7 @@
 		// Assign the tuck capacity
 		LN[2] = 20; // Capacity in tons
 
-		return System.String.Format("Small Truck {0}", GN[1].ToString());
+		return System.String.Format("Small Truck {0}", GN[0].ToString());
 	}
 }
 </Source>
@@ -1995,12 +1995,12 @@
 	public static System.String Formula(Simphony.General.SetAttribute Element)
 	{
 		// Increment the counter used to tag the small truck entities
-		GN[1] += 1;
+		GN[2] += 1;
 		
 		// Assign the tuck capacity
 		LN[2] = 20; // Capacity in tons
 
-		return System.String.Format("Small Truck {0}", GN[1].ToString());
+		return System.String.Format("Small Truck {0}", GN[2].ToString());
 	}
 }
 </Source>
@@ -2054,12 +2054,12 @@
 	public static System.String Formula(Simphony.General.SetAttribute Element)
 	{
 		// Increment the counter used to tag the small truck entities
-		GN[1] += 1;
+		GN[4] += 1;
 		
 		// Assign the tuck capacity
 		LN[2] = 20; // Capacity in tons
 
-		return System.String.Format("Small Truck {0}", GN[1].ToString());
+		return System.String.Format("Small Truck {0}", GN[4].ToString());
 	}
 }
 </Source>
@@ -4433,6 +4433,66 @@
             <References />
             <Source />
             <Value>0</Value>
+          </FormulaIndex>
+          <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Value>
+        </Setter>
+        <Setter AssemblyQualifiedName="Simphony.Modeling.GlobalIntegerSetter, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+          <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>1</Value>
+          </FormulaIndex>
+          <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Value>
+        </Setter>
+        <Setter AssemblyQualifiedName="Simphony.Modeling.GlobalIntegerSetter, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+          <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>2</Value>
+          </FormulaIndex>
+          <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Value>
+        </Setter>
+        <Setter AssemblyQualifiedName="Simphony.Modeling.GlobalIntegerSetter, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+          <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>3</Value>
+          </FormulaIndex>
+          <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Value>
+        </Setter>
+        <Setter AssemblyQualifiedName="Simphony.Modeling.GlobalIntegerSetter, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+          <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>4</Value>
+          </FormulaIndex>
+          <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>0</Value>
+          </Value>
+        </Setter>
+        <Setter AssemblyQualifiedName="Simphony.Modeling.GlobalIntegerSetter, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+          <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+            <References />
+            <Source />
+            <Value>5</Value>
           </FormulaIndex>
           <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
