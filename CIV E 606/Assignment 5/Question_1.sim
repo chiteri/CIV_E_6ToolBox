@@ -164,7 +164,36 @@ End Class</Source>
             <Source />
             <Value AssemblyQualifiedName="Simphony.Mathematics.Constant, Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Value="4" />
           </TimeOfFirstArrival>
-          <Initialization />
+          <Initialization>
+            <Setter AssemblyQualifiedName="Simphony.Modeling.LocalFloatingPointSetter`1[[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+              <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+                <References />
+                <Source />
+                <Value>0</Value>
+              </FormulaIndex>
+              <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Create, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+                <References>
+                  <Reference>Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                </References>
+                <Source>Public Partial Class Formulas
+	Public Shared Function Formula(ByVal Element As Simphony.General.Create) As System.Nullable(Of System.Double)
+		Return TimeNow
+	End Function
+End Class</Source>
+                <Value>0</Value>
+              </Value>
+            </Setter>
+          </Initialization>
         </Element>
         <Element AssemblyQualifiedName="Simphony.General.Branch, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" SerialVersion="1" Probability="0.5" Type="Conditional" Color="0" Version="206" X="680" Y="265" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Hoist arrived in less than 3 mins?">
           <InputPoints>
@@ -735,7 +764,7 @@ End Class</Source>
             <Value>0</Value>
           </Priority>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.SetAttribute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" LocalVersion="1" Version="206" X="300" Y="265" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="WorkerAssignFloor">
+        <Element AssemblyQualifiedName="Simphony.General.SetAttribute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" LocalVersion="1" Version="206" X="300" Y="265" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="WorkerAssignFloorAndDirection">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -764,6 +793,38 @@ End Class</Source>
                 <References />
                 <Source />
                 <Value>0</Value>
+              </Value>
+            </Setter>
+            <Setter AssemblyQualifiedName="Simphony.Modeling.LocalStringSetter`1[[Simphony.General.SetAttribute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728">
+              <FormulaIndex AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.SetAttribute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
+                <References />
+                <Source />
+                <Value>0</Value>
+              </FormulaIndex>
+              <Value AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.SetAttribute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="CSharp">
+                <References>
+                  <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+                  <Reference>Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+                  <Reference>Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                  <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+                </References>
+                <Source>public static partial class Formulas
+{
+	public static System.String Formula(Simphony.General.SetAttribute Element)
+	{
+		return System.String.Format("UP"); // Everyone wants to go up to begin with
+	}
+}
+</Source>
+                <Value />
               </Value>
             </Setter>
           </Locals>
@@ -907,7 +968,7 @@ End Class</Source>
           <Globals />
           <Locals />
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Create Materials" SourcePoint="OutputPoint" DestinationElement="WorkerAssignFloor" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Create Materials" SourcePoint="OutputPoint" DestinationElement="WorkerAssignFloorAndDirection" DestinationPoint="InputPoint">
           <Points>
             <Point X="177" Y="460" />
             <Point X="187" Y="460" />
@@ -932,7 +993,7 @@ End Class</Source>
           <Globals />
           <Locals />
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Create Workers" SourcePoint="OutputPoint" DestinationElement="WorkerAssignFloor" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Create Workers" SourcePoint="OutputPoint" DestinationElement="WorkerAssignFloorAndDirection" DestinationPoint="InputPoint">
           <Points>
             <Point X="187" Y="290" />
             <Point X="197" Y="290" />
@@ -1190,7 +1251,7 @@ End Class</Source>
           <Globals />
           <Locals />
         </Relationship>
-        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="WorkerAssignFloor" SourcePoint="OutputPoint" DestinationElement="WaitForHoist" DestinationPoint="InputPoint">
+        <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="WorkerAssignFloorAndDirection" SourcePoint="OutputPoint" DestinationElement="WaitForHoist" DestinationPoint="InputPoint">
           <Points>
             <Point X="367" Y="290" />
             <Point X="377" Y="290" />
