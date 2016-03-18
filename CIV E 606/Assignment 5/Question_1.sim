@@ -196,7 +196,7 @@ End Class</Source>
                 <Value>true</Value>
               </Formula>
             </Element>
-            <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="1075" Y="195" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="AssignFirstFloorAfter2">
+            <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="1050" Y="195" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="AssignFirstFloorAfter2">
               <InputPoints>
                 <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
               </InputPoints>
@@ -242,7 +242,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 1; // Return to first floor after second floor 
+		LN[1] = 1; // Return to first floor after second floor 
 		return true;
 	}
 }
@@ -296,7 +296,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 1; // Return to first floor after third floor 
+		LN[1] = 1; // Return to first floor after third floor 
 		return true;
 	}
 }
@@ -350,7 +350,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 1; // Return to first floor after fourth floor 
+		LN[1] = 1; // Return to first floor after fourth floor 
 		return true;
 	}
 }
@@ -488,7 +488,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 4; // Go to fourth floor after first floor 
+		LN[1] = 4; // Go to fourth floor after first floor 
 		return true;
 	}
 }
@@ -542,7 +542,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 4; // Go to fourth floor after first floor 
+		LN[1] = 4; // Go to fourth floor after first floor 
 		return true;
 	}
 }
@@ -596,7 +596,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 4; // Go to fourth floor after third floor 
+		LN[1] = 4; // Go to fourth floor after third floor 
 		return true;
 	}
 }
@@ -705,7 +705,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 0; // Return to ground floor after first floor 
+		LN[1] = 0; // Return to ground floor after first floor 
 		return true;
 	}
 }
@@ -759,7 +759,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 0; // Return to ground floor after second floor 
+		LN[1] = 0; // Return to ground floor after second floor 
 		return true;
 	}
 }
@@ -813,7 +813,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 0; // Return to ground floor after third floor 
+		LN[1] = 0; // Return to ground floor after third floor 
 		return true;
 	}
 }
@@ -867,7 +867,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 0; // Return to ground floor after fourth floor 
+		LN[1] = 0; // Return to ground floor after fourth floor 
 		return true;
 	}
 }
@@ -921,7 +921,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 2; // Go to second floor after third floor 
+		LN[1] = 2; // Go to second floor after third floor 
 		return true;
 	}
 }
@@ -975,7 +975,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 2; // Go to second floor after fourth floor 
+		LN[1] = 2; // Go to second floor after fourth floor 
 		return true;
 	}
 }
@@ -1084,7 +1084,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 3; // Go to third floor after first floor 
+		LN[1] = 3; // Go to third floor after first floor 
 		return true;
 	}
 }
@@ -1092,7 +1092,7 @@ End Class</Source>
                 <Value>true</Value>
               </Formula>
             </Element>
-            <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="1190" Y="245" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="AssignThirdFloorAfter2">
+            <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="1175" Y="245" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="AssignThirdFloorAfter2">
               <InputPoints>
                 <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
               </InputPoints>
@@ -1138,7 +1138,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 3; // Go to third floor after second floor 
+		LN[1] = 3; // Go to third floor after second floor 
 		return true;
 	}
 }
@@ -1192,7 +1192,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 3; // Go to third floor after fourth floor 
+		LN[1] = 3; // Go to third floor after fourth floor 
 		return true;
 	}
 }
@@ -1301,7 +1301,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		LX[1] = 2; // Go to second floor after first floor 
+		LN[1] = 2; // Go to second floor after first floor 
 		return true;
 	}
 }
@@ -1560,8 +1560,8 @@ End Class</Source>
             </Relationship>
             <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="AssignFirstFloorAfter2" SourcePoint="OutputPoint" DestinationElement="Counter6" DestinationPoint="InputPoint">
               <Points>
-                <Point X="1142" Y="220" />
-                <Point X="1152" Y="220" />
+                <Point X="1117" Y="220" />
+                <Point X="1127" Y="220" />
                 <Point X="1424" Y="270" />
                 <Point X="1434" Y="270" />
               </Points>
@@ -1762,8 +1762,8 @@ End Class</Source>
               <Points>
                 <Point X="897" Y="222.666656" />
                 <Point X="907" Y="222.666656" />
-                <Point X="1049" Y="220" />
-                <Point X="1059" Y="220" />
+                <Point X="1024" Y="220" />
+                <Point X="1034" Y="220" />
               </Points>
               <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
                 <References />
@@ -1787,8 +1787,8 @@ End Class</Source>
               <Points>
                 <Point X="897" Y="247.333313" />
                 <Point X="907" Y="247.333313" />
-                <Point X="1164" Y="270" />
-                <Point X="1174" Y="270" />
+                <Point X="1149" Y="270" />
+                <Point X="1159" Y="270" />
               </Points>
               <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
                 <References />
@@ -2335,10 +2335,10 @@ End Class</Source>
             </Relationship>
             <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="AssignThirdFloorAfter2" SourcePoint="OutputPoint" DestinationElement="Counter6" DestinationPoint="InputPoint">
               <Points>
+                <Point X="1242" Y="270" />
                 <Point X="1252" Y="270" />
-                <Point X="1262" Y="270" />
-                <Point X="1429" Y="270" />
-                <Point X="1439" Y="270" />
+                <Point X="1424" Y="270" />
+                <Point X="1434" Y="270" />
               </Points>
               <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
                 <References />
