@@ -1915,7 +1915,7 @@ End Class</Source>
       </Initialization>
       <ParameterDefinitions />
     </Scenario>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="0" StartDate="2016-03-19T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Scenario1">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-03-19T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Rework">
       <Elements>
         <Element AssemblyQualifiedName="Simphony.General.Capture, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" CaptureType="Single" SerialVersion="2" File="GroundFloorDoorQ" Resource="Ground floor Door" Version="206" X="50" Y="590" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="CaptureGroundFloorDoor">
           <InputPoints>
@@ -2282,7 +2282,7 @@ End Class</Source>
             <Value>0</Value>
           </Rate>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Comment, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Comment="Ground Floor" FontName="Microsoft Sans Serif" FontSize="10" FontStyle="4" FontUnit="Point" FontGdiCharSet="1" FontGdiVerticalFont="false" Version="206" X="55" Y="390" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="GroundFloorComment">
+        <Element AssemblyQualifiedName="Simphony.General.Comment, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Comment="Ground Floor" FontName="Microsoft Sans Serif" FontSize="10" FontStyle="4" FontUnit="Point" FontGdiCharSet="1" FontGdiVerticalFont="false" Version="206" X="135" Y="380" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="GroundFloorComment">
           <InputPoints />
           <OutputPoints />
         </Element>
