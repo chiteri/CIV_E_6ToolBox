@@ -530,11 +530,12 @@
             <Source>public static partial class Formulas
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
-	{
-		GX[1] = 1.00; // Leave the flag open for door to open next
-		
-		if ( GX[0] == 4 ) /* Only four people allowed to travel on hoist car */			
+	{		
+		if ( GX[0] == 4 ) /* Only four people allowed to travel on hoist car */	
+		{
 			CloseValve("ControlEntryToDoor");
+			OpenValve("HoldOpenDoorValve"); // Let the door close
+		}
 		
 		return true;
 	}
