@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Model Version="206" DebugEnabled="false" TraceEnabled="true" name="Model" xmlns="http://irc.construction.ualberta.ca/Simphony/Modeling">
   <Scenarios>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="INF" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-03-19T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Question_1">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="4320" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-03-19T00:00:00" TimeUnit="Minute" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="1" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="Question_1">
       <Elements>
         <Element AssemblyQualifiedName="Simphony.General.Stock, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="2215" Y="320" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="1stDistanceToClose">
           <InputPoints>
@@ -101,7 +101,7 @@
 {
 	public static System.Double Formula(Simphony.General.Flow Element)
 	{
-		return (60 / 5) * GX[1]; // This is the rate of the door closing
+		return (60 / 5) * GX[6]; // This is the rate of the door closing
 	}
 }
 </Source>
@@ -144,7 +144,7 @@
 {
 	public static System.Double Formula(Simphony.General.Flow Element)
 	{
-		return (60 / 6) * GX[1]; // This is the rate of the door opening
+		return (60 / 6) * GX[6]; // This is the rate of the door opening
 	}
 }
 </Source>
@@ -341,7 +341,7 @@
 {
 	public static System.Double Formula(Simphony.General.Flow Element)
 	{
-		return (60 / 6) * GX[1]; // This is the rate of the door opening
+		return (60 / 6) * GX[7]; // This is the rate of the door opening
 	}
 }
 </Source>
@@ -506,6 +506,8 @@
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
 		GX[0] -= 1; // Release one worker from hoist
+		
+		GX[6] = 1.00; // Allow the first floor door to open
 		
 		return true;
 	}
@@ -1102,9 +1104,31 @@
             <Source />
             <Value>true</Value>
           </Finalize>
-          <Formula AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
-            <References />
-            <Source />
+          <Formula AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="CSharp">
+            <References>
+              <Reference>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Reference>
+              <Reference>Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Reference>
+              <Reference>Simphony, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+              <Reference>Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+              <Reference>Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728</Reference>
+            </References>
+            <Source>public static partial class Formulas
+{
+	public static System.Boolean Formula(Simphony.General.Execute Element)
+	{
+		GX[4] = 1.00; // Make a request for the hoist to leave first floor
+		
+		return true;
+	}
+}
+</Source>
             <Value>true</Value>
           </Formula>
         </Element>
@@ -2271,6 +2295,8 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
+		GX[7] = 1.00; // Allow the second floor door to open 
+		
 		GX[0] -= 1; // Release one worker from hoist
 		
 		return true;
@@ -3382,8 +3408,8 @@ End Class</Source>
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
 		// Reset the stock value and request to close a door 
-		SetStockValue("DistanceToClose", 0.00); // Empty the distance for an open door to cover		
-		GX[1] = 0.00; // Leave the flag open for door to close next
+		SetStockValue("1stDistanceToClose", 0.00); // Empty the distance for an open door to cover		
+		GX[6] = 0.00; // Leave the flag open for door to close next
 		
 		return true;
 	}
@@ -3439,8 +3465,8 @@ End Class</Source>
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
 		// Reset the stock value and request to open a door 
-		SetStockValue("DistanceToOpen", 0.00); // Empty the distance to open a door		
-		GX[1] = 0.00; // LEave the flag open for door to close next
+		SetStockValue("1stDistanceToOpen", 0.00); // Empty the distance to open a door		
+		GX[6] = 0.00; // LEave the flag open for door to close next
 		
 		return true;
 	}
@@ -3496,8 +3522,8 @@ End Class</Source>
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
 		// Reset the stock value and request to close a door 
-		SetStockValue("DistanceToClose", 0.00); // Empty the distance for an open door to cover		
-		GX[1] = 0.00; // Leave the flag open for door to close next
+		SetStockValue("2ndDistanceToClose", 0.00); // Empty the distance for an open door to cover		
+		GX[7] = 0.00; // Leave the flag open for door to close next
 		
 		return true;
 	}
@@ -3553,7 +3579,7 @@ End Class</Source>
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
 		// Reset the stock value and request to open a door 
-		SetStockValue("DistanceToOpen", 0.00); // Empty the distance to open a door		
+		SetStockValue("2ndDistanceToOpen", 0.00); // Empty the distance to open a door		
 		GX[1] = 0.00; // LEave the flag open for door to close next
 		
 		return true;
@@ -3878,7 +3904,7 @@ End Class</Source>
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
 		if ( GX[0] &gt;= 4 ) // Close door only if the hoist car is not full
-			GX[4] = 1.00; // Leave the flag open for hoist to move next
+			GX[6] = 1.00; // Leave the flag open for hoist to move next
 		
 		TraceLine (System.String.Format(".... Starting first floor door closing operation at T {0}", TimeNow) );
 		
@@ -3935,7 +3961,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		GX[1] = 0.00; // Leave door open // Leave the flag open for door to open next
+		GX[6] = 0.00; // Leave door open // Leave the flag open for door to open next
 		
 		TraceLine (System.String.Format(".... Starting first floor door opening operation at T {0}", TimeNow) );
 		
@@ -3995,7 +4021,7 @@ End Class</Source>
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
 		if ( GX[0] &gt;= 4 ) // Close door only if the hoist car is not full
-			GX[4] = 1.00; // Leave the flag open for hoist to move next
+			GX[6] = 1.00; // Leave the flag open for hoist to move next
 		
 		TraceLine (System.String.Format(".... Starting first floor door closing operation at T {0}", TimeNow) );
 		
@@ -4052,9 +4078,9 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		GX[1] = 0.00; // Leave door open // Leave the flag open for door to open next
+		GX[7] = 0.00; // Leave door open // Leave the flag open for door to open next
 		
-		TraceLine (System.String.Format(".... Starting first floor door opening operation at T {0}", TimeNow) );
+		TraceLine (System.String.Format(".... Starting second floor door opening operation at T {0}", TimeNow) );
 		
 		// CloseValve("ControlEntryToDoor"); // Close the valve allowing more employees in elevator
 		
