@@ -4282,7 +4282,7 @@ End Class</Source>
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		GX[1] = 0.00; // Leave door open // Leave the flag open for door to open next
+		GX[1] = 1.00; // Leave door open // Leave the flag open for door to open next
 		
 		TraceLine (System.String.Format(".... Starting door opening operation at T {0}", TimeNow) );
 		
