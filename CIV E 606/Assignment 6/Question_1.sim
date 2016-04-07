@@ -532,14 +532,14 @@
 		CollectStatistic("TotalProjectEnd", TimeNow);
 		CollectStatistic("TotalProjectDuration", TimeNow);
 		
-		return default(System.Boolean);
+		return true;
 	}
 }
 </Source>
             <Value>true</Value>
           </Formula>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="190" Y="455" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="InitializeSimulation">
+        <Element AssemblyQualifiedName="Simphony.General.Execute, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="185" Y="455" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="InitializeSimulation">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -587,6 +587,7 @@
 	{
 		CollectStatistic("TotalProjectStart", TimeNow); // Collect project start time
 		CollectStatistic("MobilizationStart", TimeNow); // Collect Mobilization start time 
+		
 		return true;
 	}
 }
@@ -594,7 +595,7 @@
             <Value>true</Value>
           </Formula>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Servers="0" Color="0" File="(Undefined)" Resource="(Undefined)" TaskType="Unconstrained" Version="206" X="360" Y="455" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Mobilization">
+        <Element AssemblyQualifiedName="Simphony.General.Task, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Servers="0" Color="0" File="(Undefined)" Resource="(Undefined)" TaskType="Unconstrained" Version="206" X="370" Y="455" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Mobilization">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -630,7 +631,7 @@
 {
 	public static System.Double Formula(Simphony.Modeling.Task&lt;Simphony.Simulation.GeneralEntity&gt; Element)
 	{
-		double mobilizationDuration = SampleTriangular(130,200,150); 
+		double mobilizationDuration = SampleTriangular(130, 200, 150); 
 		CollectStatistic("MobilizationDuration", mobilizationDuration);
 		
 		return mobilizationDuration;
@@ -2902,7 +2903,7 @@
 {
 	public static System.Boolean Formula(Simphony.General.Execute Element)
 	{
-		CollectStatistic("UnderCutPourSart", TimeNow);
+		CollectStatistic("UnderCutPourStart", TimeNow);
 		return true;
 	}
 }
@@ -3095,8 +3096,8 @@
           <Points>
             <Point X="62" Y="480" />
             <Point X="72" Y="480" />
-            <Point X="169" Y="480" />
-            <Point X="179" Y="480" />
+            <Point X="164" Y="480" />
+            <Point X="174" Y="480" />
           </Points>
           <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
@@ -3168,10 +3169,10 @@
         </Relationship>
         <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="InitializeSimulation" SourcePoint="OutputPoint" DestinationElement="Mobilization" DestinationPoint="InputPoint">
           <Points>
-            <Point X="257" Y="480" />
-            <Point X="267" Y="480" />
-            <Point X="334" Y="480" />
+            <Point X="252" Y="480" />
+            <Point X="262" Y="480" />
             <Point X="344" Y="480" />
+            <Point X="354" Y="480" />
           </Points>
           <Category AssemblyQualifiedName="Simphony.Modeling.Formula`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728]], Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" CodeLanguage="VB">
             <References />
@@ -3193,8 +3194,8 @@
         </Relationship>
         <Relationship AssemblyQualifiedName="Simphony.General.GeneralRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" LocalVersion="1" Version="206" SourceElement="Mobilization" SourcePoint="OutputPoint" DestinationElement="MobilizationCostCollect" DestinationPoint="InputPoint">
           <Points>
-            <Point X="427" Y="480" />
             <Point X="437" Y="480" />
+            <Point X="447" Y="480" />
             <Point X="514" Y="480" />
             <Point X="524" Y="480" />
           </Points>
