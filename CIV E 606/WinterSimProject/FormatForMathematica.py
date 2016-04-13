@@ -10,7 +10,7 @@ with open('Pendulum simulation - Results.csv') as csvfile:
         # result.append(float(row['Theta - degrees (5 m, 15 degrees)']))
         # result.append(float(row['Theta - radians (2.5 m, 20 degrees)']))
         # result.append(float(row['Theta - degrees (2.5 m, 20 degrees)']))
-        # result.append(float(row['Theta - radians (2.5 m, 15 degrees)']))
+        # result.append(float(row['Theta - radians (2.5 m, 15 degrees)'])) 
         result.append(float(row['Theta - degrees (2.5 m, 15 degrees)']))
 
     print (result)

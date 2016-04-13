@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Model Version="206" DebugEnabled="false" TraceEnabled="true" name="PendulumSwing" xmlns="http://irc.construction.ualberta.ca/Simphony/Modeling">
   <Scenarios>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="100" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling2.5m15degDisplacement">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="60" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling2.5m15degDisplacement">
       <Elements>
         <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="780" Y="180" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Angles (Theta - Degrees)">
           <InputPoints />
@@ -82,12 +82,12 @@
 		angularVelocity = System.Math.Sqrt(GX[0] / GX[1]); // 9.8 m/s^2 (g) / (l) length of pendulum 
 		currentTime = GetStockValue("Stock(t)");
 		
-		// Determine the angle of Swings in both Degrees and Radians
+		// Determine the angle of Swings in both degrees and Radians
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
-		swingAngleDegrees = swingAngleRadians / (PI_RADIANS / System.Math.PI);
+		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
 		
 		// Gather value of the angle of swing on the statistics element throughout the run
-		// This is in Radians and Degrees
+		// This is in Radians as opposed to Degrees
 		CollectStatistic("Angles (Theta - Radians)", swingAngleRadians); 
 		CollectStatistic("Angles (Theta - Degrees)", swingAngleDegrees); 
 		
@@ -288,7 +288,7 @@
       </Initialization>
       <ParameterDefinitions />
     </Scenario>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="100" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling2.5m20degDisplacement">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="60" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling2.5m20degDisplacement">
       <Elements>
         <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="775" Y="175" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Angles (Theta - Degrees)">
           <InputPoints />
@@ -360,7 +360,7 @@
 		double angularVelocity = 0.00; // g / l (Gravitational constant - G (9.8 m/s^2) / l (Length of pendulum) 
 		double currentTime = 0.00; // Time in seconds as it advances througout the simulation
 		
-		// Half, circle =&gt; 2 PI radians make a complete circle (360 degrees)
+		// Half circle =&gt; 2 PI radians make a complete circle (360 degrees)
 		const double PI_RADIANS = 180.00; 
 		double swingAngleRadians = 0.00; 
 		double swingAngleDegrees = 0.00; 
@@ -369,12 +369,12 @@
 		angularVelocity = System.Math.Sqrt(GX[0] / GX[1]); // 9.8 m/s^2 (g) / (l) length of pendulum 
 		currentTime = GetStockValue("Stock(t)");
 		
-		// Determine the angle of Swings in both degrees and Radians
+		// Determine the angle of swings in both Degrees and Radians
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
-		swingAngleDegrees = swingAngleRadians / (PI_RADIANS / System.Math.PI);
+		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
 		
 		// Gather value of the angle of swing on the statistics element throughout the run
-		// This is in Radians as opposed to Degrees
+		// This is in Radians and Degrees
 		CollectStatistic("Angles (Theta - Radians)", swingAngleRadians); 
 		CollectStatistic("Angles (Theta - Degrees)", swingAngleDegrees); 
 		
@@ -575,7 +575,7 @@
       </Initialization>
       <ParameterDefinitions />
     </Scenario>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="100" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling5m15degDisplacement">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="60" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling5m15degDisplacement">
       <Elements>
         <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="780" Y="180" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Angles (Theta - Degrees)">
           <InputPoints />
@@ -647,7 +647,7 @@
 		double angularVelocity = 0.00; // g / l (Gravitational constant - G (9.8 m/s^2) / l (Length of pendulum) 
 		double currentTime = 0.00; // Time in seconds as it advances througout the simulation
 		
-		// Half, circle =&gt; 2 PI radians make a complete circle (360 degrees)
+		// Half circle =&gt; 2 PI radians make a complete circle (360 degrees)
 		const double PI_RADIANS = 180.00; 
 		double swingAngleRadians = 0.00; 
 		double swingAngleDegrees = 0.00; 
@@ -656,12 +656,12 @@
 		angularVelocity = System.Math.Sqrt(GX[0] / GX[1]); // 9.8 m/s^2 (g) / (l) length of pendulum 
 		currentTime = GetStockValue("Stock(t)");
 		
-		// Determine the angle of Swings in both degrees and Radians
+		// Determine the angle of swings in both Degrees and Radians
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
-		swingAngleDegrees = swingAngleRadians / (PI_RADIANS / System.Math.PI);
+		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
 		
 		// Gather value of the angle of swing on the statistics element throughout the run
-		// This is in Radians as opposed to Degrees
+		// This is in Radians and Degrees
 		CollectStatistic("Angles (Theta - Radians)", swingAngleRadians); 
 		CollectStatistic("Angles (Theta - Degrees)", swingAngleDegrees); 
 		
@@ -862,7 +862,7 @@
       </Initialization>
       <ParameterDefinitions />
     </Scenario>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="100" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling5m20degDisplacement">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="60" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling5m20degDisplacement">
       <Elements>
         <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="780" Y="175" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Angles (Theta - Degrees)">
           <InputPoints />
@@ -934,7 +934,7 @@
 		double angularVelocity = 0.00; // g / l (Gravitational constant - G (9.8 m/s^2) / l (Length of pendulum) 
 		double currentTime = 0.00; // Time in seconds as it advances througout the simulation
 		
-		// Half, circle =&gt; 2 PI radians make a complete circle (360 degrees)
+		// Half circle =&gt; 2 PI radians make a complete circle (360 degrees)
 		const double PI_RADIANS = 180.00; 
 		double swingAngleRadians = 0.00; 
 		double swingAngleDegrees = 0.00; 
@@ -943,12 +943,12 @@
 		angularVelocity = System.Math.Sqrt(GX[0] / GX[1]); // 9.8 m/s^2 (g) / (l) length of pendulum 
 		currentTime = GetStockValue("Stock(t)");
 		
-		// Determine the angle of Swings in both degrees and Radians
+		// Determine the angle of Swings in both Degrees and Radians
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
-		swingAngleDegrees = swingAngleRadians / (PI_RADIANS / System.Math.PI);
+		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
 		
 		// Gather value of the angle of swing on the statistics element throughout the run
-		// This is in Radians as opposed to Degrees
+		// This is in Radians and Degrees
 		CollectStatistic("Angles (Theta - Radians)", swingAngleRadians); 
 		CollectStatistic("Angles (Theta - Degrees)", swingAngleDegrees); 
 		
