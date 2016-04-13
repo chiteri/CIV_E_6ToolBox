@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Model Version="206" DebugEnabled="false" TraceEnabled="true" name="WinterSIMProject" xmlns="http://irc.construction.ualberta.ca/Simphony/Modeling">
+<Model Version="206" DebugEnabled="false" TraceEnabled="true" name="PendulumSwing" xmlns="http://irc.construction.ualberta.ca/Simphony/Modeling">
   <Scenarios>
-    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="100" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="PendulumSwing">
+    <Scenario AssemblyQualifiedName="Simphony.Modeling.Scenario, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" Enabled="true" GridSizeHeight="5" GridSizeWidth="5" HaltTime="100" RunCount="1" ScaleFactor="1" ShowGrid="false" ShowRulers="false" SnapToGrid="true" Seed="8782" StartDate="2016-04-05T00:00:00" TimeUnit="Second" AbsoluteError="1E-05" RelativeError="1E-05" TimeStep="0.05" VectorSize="0" MatrixRows="0" MatrixColumns="0" Description="" name="sling5m20degDisplacement">
       <Elements>
-        <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="930" Y="125" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Angles (Theta)">
+        <Element AssemblyQualifiedName="Simphony.General.Statistic, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Interpretation="Generic" IsIntrinsic="false" Version="206" X="820" Y="125" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="true" name="Angles (Theta)">
           <InputPoints />
           <OutputPoints />
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Flow, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="625" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="DummyFlowR2">
+        <Element AssemblyQualifiedName="Simphony.General.Flow, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="515" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="DummyFlowR2">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -30,7 +30,7 @@
             <Value>0</Value>
           </Rate>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Flow, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="300" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="FlowRateR1">
+        <Element AssemblyQualifiedName="Simphony.General.Flow, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="190" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="FlowRateR1">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -84,7 +84,7 @@
             <Value>0</Value>
           </Rate>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Sink, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" X="780" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Sink1">
+        <Element AssemblyQualifiedName="Simphony.General.Sink, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" X="670" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Sink1">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -100,7 +100,7 @@
             <Value />
           </OutgoingTrace>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Source, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" X="140" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Source1">
+        <Element AssemblyQualifiedName="Simphony.General.Source, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" X="30" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Source1">
           <InputPoints />
           <OutputPoints>
             <OutputPoint AssemblyQualifiedName="Simphony.Modeling.OutputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="57" Y="20" name="OutputPoint" />
@@ -116,7 +116,7 @@
             <Value />
           </OutgoingTrace>
         </Element>
-        <Element AssemblyQualifiedName="Simphony.General.Stock, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="460" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Stock(t)">
+        <Element AssemblyQualifiedName="Simphony.General.Stock, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Color="0" Version="206" X="350" Y="130" Description="" Visible="true" Orientation="NoRotation" ReportStatistics="false" name="Stock(t)">
           <InputPoints>
             <InputPoint AssemblyQualifiedName="Simphony.Modeling.InputPoint, Simphony.Modeling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" RelationshipType="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" X="-16" Y="20" name="InputPoint" />
           </InputPoints>
@@ -143,34 +143,34 @@
       <Relationships>
         <Relationship AssemblyQualifiedName="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="DummyFlowR2" SourcePoint="OutputPoint" DestinationElement="Sink1" DestinationPoint="InputPoint">
           <Points>
-            <Point X="692" Y="155" />
-            <Point X="702" Y="155" />
-            <Point X="754" Y="155" />
-            <Point X="764" Y="155" />
+            <Point X="582" Y="155" />
+            <Point X="592" Y="155" />
+            <Point X="644" Y="155" />
+            <Point X="654" Y="155" />
           </Points>
         </Relationship>
         <Relationship AssemblyQualifiedName="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="FlowRateR1" SourcePoint="OutputPoint" DestinationElement="Stock(t)" DestinationPoint="InputPoint">
           <Points>
-            <Point X="362" Y="155" />
-            <Point X="372" Y="155" />
-            <Point X="439" Y="155" />
-            <Point X="449" Y="155" />
+            <Point X="257" Y="155" />
+            <Point X="267" Y="155" />
+            <Point X="324" Y="155" />
+            <Point X="334" Y="155" />
           </Points>
         </Relationship>
         <Relationship AssemblyQualifiedName="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Source1" SourcePoint="OutputPoint" DestinationElement="FlowRateR1" DestinationPoint="InputPoint">
           <Points>
-            <Point X="202" Y="155" />
-            <Point X="212" Y="155" />
-            <Point X="279" Y="155" />
-            <Point X="289" Y="155" />
+            <Point X="97" Y="155" />
+            <Point X="107" Y="155" />
+            <Point X="164" Y="155" />
+            <Point X="174" Y="155" />
           </Points>
         </Relationship>
         <Relationship AssemblyQualifiedName="Simphony.General.ContinuousRelationship, Simphony.General, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0870fe8ecaba8728" Version="206" SourceElement="Stock(t)" SourcePoint="OutputPoint" DestinationElement="DummyFlowR2" DestinationPoint="InputPoint">
           <Points>
-            <Point X="527" Y="155" />
-            <Point X="537" Y="155" />
-            <Point X="599" Y="155" />
-            <Point X="609" Y="155" />
+            <Point X="417" Y="155" />
+            <Point X="427" Y="155" />
+            <Point X="489" Y="155" />
+            <Point X="499" Y="155" />
           </Points>
         </Relationship>
       </Relationships>
