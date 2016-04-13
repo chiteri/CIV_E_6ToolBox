@@ -278,7 +278,10 @@
 {
 	public static System.Double Formula(Simphony.Modeling.Scenario Element)
 	{
-		return 15.00; // Begin with a 15 degrees angle of displacement from equilibrium position
+		// Half circle =&gt; 2 PI radians make a complete circle (360 degrees)
+		const double PI_RADIANS = 180.00; 
+		
+		return (15.00 * System.Math.PI) / PI_RADIANS; // Begin with a 15 degrees angle of displacement from equilibrium position
 	}
 }
 </Source>
@@ -565,7 +568,10 @@
 {
 	public static System.Double Formula(Simphony.Modeling.Scenario Element)
 	{
-		return 20.00; // Begin with a 20 degrees angle of displacement from equilibrium position
+		// Half circle =&gt; 2 PI radians make a complete circle (360 degrees)
+		const double PI_RADIANS = 180.00; 
+		
+		return (20.00 * System.Math.PI) / PI_RADIANS; // Begin with a 20 degrees angle of displacement from equilibrium position
 	}
 }
 </Source>
@@ -852,7 +858,10 @@
 {
 	public static System.Double Formula(Simphony.Modeling.Scenario Element)
 	{
-		return 15.00; // Begin with a 15 degrees angle of displacement from equilibrium position
+		// Half circle =&gt; 2 PI radians make a complete circle (360 degrees)
+		const double PI_RADIANS = 180.00; 
+		
+		return (15.00 * System.Math.PI) / PI_RADIANS; // Begin with a 15 degrees angle of displacement from equilibrium position
 	}
 }
 </Source>
@@ -1139,7 +1148,10 @@
 {
 	public static System.Double Formula(Simphony.Modeling.Scenario Element)
 	{
-		return 20.00; // Begin with a 20 degrees angle of displacement from equilibrium position
+		// Half circle =&gt; 2 PI radians make a complete circle (360 degrees)
+		const double PI_RADIANS = 180.00; 
+		
+		return (20.00 * System.Math.PI) / PI_RADIANS ; // Begin with a 20 degrees angle of displacement from equilibrium position
 	}
 }
 </Source>
