@@ -232,7 +232,7 @@
 {
 	public static System.Double Formula(Simphony.Modeling.Scenario Element)
 	{ 
-		return 5.00; // Assume the length of the sling is 5 metres
+		return 5.00; // Assume the length of the sling is 5 metres long
 	}
 }
 </Source>
@@ -264,7 +264,7 @@
 {
 	public static System.Double Formula(Simphony.Modeling.Scenario Element)
 	{
-		return 20.00; // Begin with an angle of swing of 20 degrees first
+		return 20.00; // Begin with a 20 degrees angle of displacement from equilibrium position
 	}
 }
 </Source>
