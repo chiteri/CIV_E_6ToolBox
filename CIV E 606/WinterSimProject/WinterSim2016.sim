@@ -67,14 +67,15 @@
 	public static System.Double Formula(Simphony.General.Flow Element)
 	{
 		double angularVelocity = 0.00; // g / l (Gravitational constant - G (9.8 m/s^2) / l (Length of pendulum) 
-		double currentTime = 0.00; 
+		double currentTime = 0.00; // Time in seconds as it advances througout the simulation
 		
-		angularVelocity = System.Math.Sqrt(GX[0] / GX[1]); // 9.8 m/s^2 / length of pendulum 
+		// Calculate the angular velocity of the swinging pendulum 
+		angularVelocity = System.Math.Sqrt(GX[0] / GX[1]); // 9.8 m/s^2 / (l) length of pendulum 
 		currentTime = GetStockValue("Stock(t)");
 		
-		CollectStatistic("Angles (Theta)", GX[2] * System.Math.Cos(angularVelocity * currentTime)); // Initial condition, time zero
-		
-		GX[2] = 1; // Subsequent swings
+		// Gather value of the angle of swing on the statistics element throughout the run
+		// This is in Radians as opposed to Degrees
+		CollectStatistic("Angles (Theta)", GX[2] * System.Math.Cos(angularVelocity * currentTime)); 
 		
 		return 1.0;
 	}
