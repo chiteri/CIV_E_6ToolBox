@@ -86,6 +86,9 @@
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
 		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
 		
+		// Send output to display
+		TraceLine (System.String.Format("{0:000.000000} sec, {1:000.000000000000000000} rad, {2:000.000000000000000000} deg", currentTime, swingAngleRadians,  swingAngleDegrees) );
+		
 		// Gather value of the angle of swing on the statistics element throughout the run
 		// This is in Radians as opposed to Degrees
 		CollectStatistic("Angles (Theta - Radians)", swingAngleRadians); 
@@ -375,6 +378,9 @@
 		// Determine the angle of swings in both Degrees and Radians
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
 		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
+		
+		// Send output to display
+		TraceLine (System.String.Format("{0:000.000000} sec, {1:000.000000000000000000} rad, {2:000.000000000000000000} deg", currentTime, swingAngleRadians,  swingAngleDegrees) );
 		
 		// Gather value of the angle of swing on the statistics element throughout the run
 		// This is in Radians and Degrees
@@ -666,6 +672,9 @@
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
 		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
 		
+		// Send output to display
+		TraceLine (System.String.Format("{0:000.000000} sec, {1:000.000000000000000000} rad, {2:000.000000000000000000} deg", currentTime, swingAngleRadians,  swingAngleDegrees) );
+		
 		// Gather value of the angle of swing on the statistics element throughout the run
 		// This is in Radians and Degrees
 		CollectStatistic("Angles (Theta - Radians)", swingAngleRadians); 
@@ -955,6 +964,9 @@
 		// Determine the angle of Swings in both Degrees and Radians
 		swingAngleRadians = GX[2] * System.Math.Cos(angularVelocity * currentTime);
 		swingAngleDegrees = (swingAngleRadians * PI_RADIANS ) / System.Math.PI;
+		
+		// Send output to display
+		TraceLine (System.String.Format("{0:000.000000} sec, {1:000.000000000000000000} rad, {2:000.000000000000000000} deg", currentTime, swingAngleRadians,  swingAngleDegrees) );
 		
 		// Gather value of the angle of swing on the statistics element throughout the run
 		// This is in Radians and Degrees
